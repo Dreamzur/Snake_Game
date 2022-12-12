@@ -42,4 +42,14 @@ public class Audio {
             e.printStackTrace();
         }
     }
+    public void badSound(){
+        try {
+            File file = new File("src/resources/lifeSteal.wav");
+            Clip audio = AudioSystem.getClip();
+            audio.open(AudioSystem.getAudioInputStream(file));
+            audio.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

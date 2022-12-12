@@ -140,6 +140,7 @@ public class Game extends JPanel implements ActionListener {
         } else if ((x[0] == badAppleX) && (y[0] == badAppleY)) {
             snakeLength--;
             applesEaten--;
+            audio.badSound();
             badApple();
         }
     }
