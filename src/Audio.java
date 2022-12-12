@@ -27,4 +27,19 @@ public class Audio {
         //stops the WAV file from playing
             clip.stop();
         }
+
+    public void eatSound(){
+        try {
+            File file = new File("src/resources/eatingSound.wav");
+            Clip audio = AudioSystem.getClip();
+            audio.open(AudioSystem.getAudioInputStream(file));
+            //lowers the volume of sound file
+            FloatControl gainControl =
+                    (FloatControl) audio.getControl(FloatControl.Type.MASTER_GAIN);
+            gainControl.setValue(-10.0f);
+            audio.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
