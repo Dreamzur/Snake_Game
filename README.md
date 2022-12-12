@@ -5,7 +5,7 @@ Enjoy the :snake:!
 
 ## How to play
 
-* Use WASD to control the snake
+* Use WASD or Arrow keys to control the snake
 * W - Up | S - Down | A - Left | D - Right
 * If you lose, press SPACE to restart game
 
