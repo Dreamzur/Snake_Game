@@ -7,12 +7,15 @@ import java.awt.event.KeyEvent;
 import java.util.Random;
 
 public class Game extends JPanel implements ActionListener {
-
+    //size of the window
     static final int WIDTH = 600;
     static final int HEIGHT = 600;
+    //size of the grid the snake travels
     static final int UNIT_SIZE = 25;
     static final int GAME_UNITS = (WIDTH * HEIGHT) / UNIT_SIZE;
+    //game speed
     static final int DELAY = 50;
+    //position of snake
     final int[] x = new int[GAME_UNITS];
     final int[] y = new int[GAME_UNITS];
     int snakeLength = 1;
@@ -36,6 +39,8 @@ public class Game extends JPanel implements ActionListener {
         loadImages();
         startGame();
     }
+
+    //loads the images in the resource folder
     public void loadImages() {
         ImageIcon appl = new ImageIcon("src/resources/apple.png");
         apple = appl.getImage();
@@ -47,6 +52,7 @@ public class Game extends JPanel implements ActionListener {
         enemy = enem.getImage();
     }
 
+    //starts the game
     public void startGame() {
         newApple();
         badApple();
@@ -130,7 +136,7 @@ public class Game extends JPanel implements ActionListener {
             }
         }
     }
-
+    //method to check if snake touches the apples
     public void checkApple() {
         if ((x[0] == appleX) && (y[0] == appleY)) {
             snakeLength++;
@@ -181,6 +187,7 @@ public class Game extends JPanel implements ActionListener {
 
 
     }
+
     //whenever the game restarts a new window is created
     //audio is also restarted
     public void restartGame() {

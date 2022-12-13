@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 public class GameFrame extends JFrame {
-
+    //creates the window for the snake game
     GameFrame() {
 
         this.add(new Game());
