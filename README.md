@@ -3,13 +3,13 @@ A simple snake game made with Java for my final project.
 
 Enjoy the :snake:!
 
-## How to play
+## 🎮 How to play
 
 * Use WASD or Arrow keys to control the snake
-* W - Up | S - Down | A - Left | D - Right
+* <code>W</code> - Up | <code>S</code> - Down | <code>A</code> - Left | <code>D</code> - Right
 * If you lose, press SPACE to restart game
 
-## Work in progress
+## ⛏ Work in progress
   Still adding features to the game. :smile:
   Currently looking to add:
 - [x] Image for snake head & body
@@ -20,5 +20,5 @@ Enjoy the :snake:!
 - [ ] More bad apples on screen
 
 
-## Features needing to be fixed :wrench:
+## :wrench: Features needing to be fixed 
 - [ ] Currently hunting for bugs :bug:
